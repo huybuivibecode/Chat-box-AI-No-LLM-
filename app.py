@@ -3,14 +3,6 @@ import os
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 os.environ["ANONYMIZED_TELEMETRY"] = "False"
 
-# ---- Monkeypatch Pydantic v1 BaseSettings for Python 3.14 compatibility ----
-try:
-    from pydantic_settings import BaseSettings as PydanticSettings
-    import pydantic
-    pydantic.BaseSettings = PydanticSettings
-except ImportError:
-    pass
-
 import streamlit as st
 import chromadb
 import pickle
