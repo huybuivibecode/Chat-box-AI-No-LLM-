@@ -4,6 +4,8 @@
 
 **Liên hệ**: buiquanghuy352k5@gmail.com
 
+**Model**:  https://3fbhueicncrghw9cjajjzq.streamlit.app/
+
 ## 1. Mục đích
 
 Dự án này là một chatbot FAQ dành cho Đại học Kinh tế (DUE). Ứng dụng trả lời các câu hỏi phổ biến về học vụ, đăng ký học phần, quy định, CTSV và thủ tục bằng cách tìm câu trả lời gần nhất trong dữ liệu FAQ hiện có.
