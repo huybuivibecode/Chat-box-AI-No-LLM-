@@ -1,0 +1,9 @@
+[client]
+showErrorDetails = false
+
+[logger]
+level = "warning"
+
+[python]
+# Force Python 3.11 to avoid Python 3.14 compatibility issues
+# Note: Streamlit Cloud will use the closest available version
