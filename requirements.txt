@@ -1,0 +1,7 @@
+streamlit
+chromadb
+numpy
+pandas
+nltk
+beautifulsoup4
+pyvi
