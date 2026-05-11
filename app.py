@@ -1,11 +1,14 @@
 import os
+# ---- Disable protobuf C extension for Python 3.14 compatibility ----
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
 import streamlit as st
 import chromadb
 import pickle
 import numpy as np
 
 # ---- Disable chromadb telemetry trước khi import xldl ----
-os.environ["ANONYMIZED_TELEMETRY"] = "False"
 try:
     import xldl
     def preprocess(text: str) -> str:
