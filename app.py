@@ -1,9 +1,11 @@
+import os
 import streamlit as st
 import chromadb
 import pickle
 import numpy as np
 
-# ---- Thử import xldl; nếu thiếu thì dùng hàm rỗng ----
+# ---- Disable chromadb telemetry trước khi import xldl ----
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
 try:
     import xldl
     def preprocess(text: str) -> str:
